@@ -118,7 +118,7 @@ if(isset($_REQUEST['stdsubmit']))
           <form id="admloginform"  action="register.php" method="post" onsubmit="return validateform('admloginform');">
                    <table cellpadding="20" cellspacing="20" style="text-align:left;margin-left:15em;background:buttonShadow"  >
               <tr>
-                  <td>User Name</td>
+                  <td>User Name *</td>
                   <td><input type="text" name="cname" value="" size="16" onkeyup="isalphanum(this)"/></td>
 
               </tr>
@@ -135,24 +135,24 @@ if(isset($_REQUEST['stdsubmit']))
               </tr>
 -->
               <tr>
-                  <td>E-mail ID</td>
+                  <td>E-mail ID *</td>
                   <td><input type="text" name="email" value="" size="16" /></td>
               </tr>
                        <tr>
-                  <td>Contact No</td>
+                  <td>Contact No *</td>
                   <td><input type="text" name="contactno" value="" size="16" onkeyup="isnum(this)"/></td>
               </tr>
 
                   <tr>
-                  <td>Address</td>
+                  <td>Address *</td>
                   <td><textarea name="address" cols="20" rows="3"></textarea></td>
               </tr>
                        <tr>
-                  <td>City</td>
+                  <td>City *</td>
                   <td><input type="text" name="city" value="" size="16" onkeyup="isalpha(this)"/></td>
               </tr>
                        <tr>
-                  <td>PIN Code</td>
+                  <td>PIN Code *</td>
                   <td><input type="text" name="pin" value="" size="16" onkeyup="isnum(this)" /></td>
               </tr>
                        <tr>
