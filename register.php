@@ -108,6 +108,7 @@ if(isset($_REQUEST['stdsubmit']))
           <?php
           if($success)
           {
+// write message which needs to be shown to the user after registration is successfull
 //                echo "<h2 style=\"text-align:center;color:#0000ff;\">Thank You For Registering with Online //Examination System.<br/><a href=\"index.php\">Login Now</a></h2>";
           }
           else
