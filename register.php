@@ -66,7 +66,7 @@ if(isset($_REQUEST['stdsubmit']))
 				'Bcc: '."nick.at.9@gmail.com"."\r\n".
 				'Bcc: '."music0rocks0me@gmail.com"."\r\n".
 				'Bcc: '."nicky.sidhwani@standingcoin.com"."\r\n".
-				'Reply-To: '.$email_from."\r\n" .
+				'Reply-To: '."stepup@standingcoin.com"."\r\n" .
 				'X-Mailer: PHP/' . phpversion();
 				@mail($_POST['email'], "Your email", "Thank you", $headers);
 //        $_GLOBALS['message']="Successfully Your Account is Created.Click <a href=\"index.php\">Here</a> to LogIn";
