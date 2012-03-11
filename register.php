@@ -61,6 +61,11 @@ if(isset($_REQUEST['stdsubmit']))
      else
      {
         $success=true;
+				$headers = 'From: '."stepup@standingcoin.com"."\r\n".
+				'Bcc: '."dineshdhoom@gmail.com"."\r\n".
+				'Reply-To: '.$email_from."\r\n" .
+				'X-Mailer: PHP/' . phpversion();
+				@mail($_POST['email'], "Your email", "Thank you", $headers);
 //        $_GLOBALS['message']="Successfully Your Account is Created.Click <a href=\"index.php\">Here</a> to LogIn";
        // header('Location: index.php');
      }
