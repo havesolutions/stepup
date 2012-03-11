@@ -46,7 +46,7 @@ if(isset($_REQUEST['stdsubmit']))
      $result=executeQuery("select stdname as std from student where stdname='".htmlspecialchars($_REQUEST['cname'],ENT_QUOTES)."';");
 
     // $_GLOBALS['message']=$newstd;
-    if(empty($_REQUEST['cname'])||empty ($_REQUEST['password'])||empty ($_REQUEST['email']))
+    if(empty($_REQUEST['cname']) || empty ($_REQUEST['email']))
     {
          $_GLOBALS['message']="Some of the required Fields are Empty";
     }else if(mysql_num_rows($result)>0)
@@ -108,7 +108,7 @@ if(isset($_REQUEST['stdsubmit']))
           <?php
           if($success)
           {
-// write message which needs to be shown to the user after registration is successfull
+// P1 - write message which needs to be shown to the user after registration is successfull
 //                echo "<h2 style=\"text-align:center;color:#0000ff;\">Thank You For Registering with Online //Examination System.<br/><a href=\"index.php\">Login Now</a></h2>";
           }
           else
@@ -116,14 +116,14 @@ if(isset($_REQUEST['stdsubmit']))
            /***************************** Step 2 ****************************/
           ?>
           <form id="admloginform"  action="register.php" method="post" onsubmit="return validateform('admloginform');">
-                   <table cellpadding="20" cellspacing="20" style="text-align:left;margin-left:15em" >
+                   <table cellpadding="20" cellspacing="20" style="text-align:left;margin-left:15em;background:buttonShadow"  >
               <tr>
                   <td>User Name</td>
                   <td><input type="text" name="cname" value="" size="16" onkeyup="isalphanum(this)"/></td>
 
               </tr>
 
-                      <tr>
+<!--                      <tr>
                   <td>Password</td>
                   <td><input type="password" name="password" value="" size="16" onkeyup="isalphanum(this)" /></td>
 
@@ -133,6 +133,7 @@ if(isset($_REQUEST['stdsubmit']))
                   <td><input type="password" name="repass" value="" size="16" onkeyup="isalphanum(this)" /></td>
 
               </tr>
+-->
               <tr>
                   <td>E-mail ID</td>
                   <td><input type="text" name="email" value="" size="16" /></td>

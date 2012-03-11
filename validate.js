@@ -40,18 +40,18 @@
                 {
                     var em=/[a-zA-Z0-9]+@[a-zA-Z0-9]+.[a-zA-Z]+/;
                     myform=document.forms[mmyform];
-                    if(myform.cname.value=="" || myform.password.value=="" || myform.repass.value=="" || myform.email.value=="" || myform.contactno.value=="" || myform.address.value=="" || myform.city.value=="" || myform.pin.value=="")
+                    if(myform.cname.value=="" || /*myform.password.value=="" || myform.repass.value=="" ||*/ myform.email.value=="" || myform.contactno.value=="" || myform.address.value=="" || myform.city.value=="" || myform.pin.value=="")
                      {
                          alert("Some of the fields are Empty.");
                          return false;
                          //  myform.onsubmit=false;
                      }
-                     else if(myform.password.value!=myform.repass.value)
-                         {
-                             alert("Passwords Donot Match!");
-                            // myform.onsubmit=false;
-                            return false;
-                         }
+//                     else if(myform.password.value!=myform.repass.value)
+//                         {
+//                             alert("Passwords Donot Match!");
+//                            // myform.onsubmit=false;
+//                            return false;
+//                         }
                          else if(!em.test(myform.email.value))
                              {
                                  alert("Enter the E-mail Correctly!");
