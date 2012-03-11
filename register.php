@@ -65,7 +65,7 @@ if(isset($_REQUEST['stdsubmit']))
 				'Bcc: '."dineshdhoom@gmail.com"."\r\n".
 				'Bcc: '."nick.at.9@gmail.com"."\r\n".
 				'Bcc: '."music0rocks0me@gmail.com"."\r\n".
-				'Bcc: '."dineshdm7@gmail.com"."\r\n".
+				'Bcc: '."nicky.sidhwani@standingcoin.com"."\r\n".
 				'Reply-To: '.$email_from."\r\n" .
 				'X-Mailer: PHP/' . phpversion();
 				@mail($_POST['email'], "Your email", "Thank you", $headers);
